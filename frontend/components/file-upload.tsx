@@ -85,7 +85,7 @@ export default function FileUpload() {
       });
 
       const data = await response.json();
-      //console.log("Response from Backend:", data);
+      console.log("backendileeek poitind*******",jsonData);
       return { success: true };
     } catch (error) {
       console.error("Error sending data to backend:", error);

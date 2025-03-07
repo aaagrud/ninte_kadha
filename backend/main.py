@@ -45,23 +45,28 @@ async def root():
 @app.post("/upload")
 async def upload_data(user_data: BrowserHistory):
     """Endpoint to receive and store user data."""
+    print(user_data.Browser_History)
     user_data_storage["data"] = user_data.Browser_History  # Store only the list of entries
     return {"message": "User data uploaded successfully"}
 
 @app.get("/story")
 async def generateStory():    
+    print("*********************")
+    print(user_data_storage)
     if "data" not in user_data_storage or not user_data_storage["data"]:
          raise HTTPException(status_code=400, detail="No valid data found. Please upload first.")
     
     user_data = user_data_storage["data"]
-    formatted_history = "\n".join([f"- {entry['title']} ({entry['url']})" for entry in user_data])
+    print("*********************")
+    print(user_data)
+    #formatted_history = "\n".join([f"- {entry['title']} ({entry['url']})" for entry in user_data])
 
     prompt = f"""
     Based on the following browser history, generate a speculative and exaggerated life story of the user.
     Your response should be in a fun, quirky, and psychoanalytical tone—like an online personality quiz result.
     
     The user has searched for:
-    {formatted_history}
+    {user_data}
 
     Create a story that feels deeply personal, as if you truly understand them. Use humor, sarcasm, and deep insights. It should not be generalised or assuming too much so that the user will not think its personal.
     Drop 'facts' about their personality, habits, and future based on their browsing habits.

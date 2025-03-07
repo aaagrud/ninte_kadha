@@ -8,6 +8,7 @@ __pycache__/
 venv/
 env/
 myenv/
+.venv/
 
 # FastAPI specific
 uploads/  # Ignore uploaded JSON files for privacy and security
