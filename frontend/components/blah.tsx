@@ -1,4 +1,3 @@
-"use client"
 import type React from "react";
 import { useState, useRef } from "react";
 import { Cloud, Upload, Check, AlertCircle } from "lucide-react";
@@ -11,6 +10,7 @@ export default function FileUpload() {
   const [uploadSuccess, setUploadSuccess] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
+  // Handle Drag Events
   const handleDragOver = (e: React.DragEvent) => {
     e.preventDefault();
     setIsDragging(true);
@@ -34,31 +34,33 @@ export default function FileUpload() {
     }
   };
 
+  // Validate File Before Upload
   const validateFile = (file: File): boolean => {
     if (!file.name.endsWith(".json")) {
       setError("Please upload a JSON file");
       return false;
     }
 
-    if (file.size > 45 * 1024 * 1024) {
-
-      setError("File size should be less than 45MB");
+    if (file.size > 10 * 1024 * 1024) {
+      // 10MB limit
+      setError("File size should be less than 10MB");
       return false;
     }
 
     return true;
   };
 
+  // Read & Send JSON File to Backend
   const handleFileUpload = async (file: File) => {
     const reader = new FileReader();
 
     reader.onload = async (event) => {
       if (event.target?.result) {
         try {
-          const jsonData = JSON.parse(event.target.result as string); 
-          console.log("itha Extracted JSON Data:", jsonData);
+          const jsonData = JSON.parse(event.target.result as string); // Convert file content to JSON
+          console.log("Extracted JSON Data:", jsonData);
 
-          
+          // Send JSON to FastAPI backend
           const response = await sendDataToBackend(jsonData);
           if (response?.success) {
             setUploadSuccess(true);
@@ -70,10 +72,10 @@ export default function FileUpload() {
       }
     };
 
-    reader.readAsText(file); 
+    reader.readAsText(file); // Read file as text
   };
 
-  
+  // Function to send JSON data to FastAPI
   const sendDataToBackend = async (jsonData: any) => {
     try {
       const response = await fetch("http://127.0.0.1:8000/upload", {
@@ -85,7 +87,7 @@ export default function FileUpload() {
       });
 
       const data = await response.json();
-      //console.log("Response from Backend:", data);
+      console.log("Response from Backend:", data);
       return { success: true };
     } catch (error) {
       console.error("Error sending data to backend:", error);
@@ -94,7 +96,7 @@ export default function FileUpload() {
     }
   };
 
-  
+  // Handle File Selection
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setError(null);
     if (e.target.files && e.target.files.length > 0) {
@@ -106,7 +108,7 @@ export default function FileUpload() {
     }
   };
 
-  
+  // Open File Picker
   const handleClick = () => {
     fileInputRef.current?.click();
   };
