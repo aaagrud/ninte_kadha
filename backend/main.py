@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from dotenv import load_dotenv
 from groq import Groq
-from utils.py import process_browser_history
+from utils import process_browser_history
 import os
 
 
@@ -16,9 +16,9 @@ client = Groq(
 
 @app.get("/")
 async def root():
-    return {"message" : "Hello World"}
+    return {"message" : "Hello me"}
 
-@app.get("/secrets")
+@app.get("/story")
 async def generateStory():
 
     file_path = "data.json"
