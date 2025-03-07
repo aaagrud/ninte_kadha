@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+myenv/
+
+# FastAPI specific
+uploads/  # Ignore uploaded JSON files for privacy and security
+
+# Ignore log files and temp files
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# Ignore environment variables
+.env
+
+# Node.js dependencies (if used in frontend)
+frontend/node_modules/
+frontend/package-lock.json
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore OS-specific files
+Thumbs.db
