@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Frontend",
+			"path": ".."
+		},
+		{
+			"name": "ninteKadha",
+			"path": "../../ninteKadha"
+		}
+	],
+	"settings": {}
+}

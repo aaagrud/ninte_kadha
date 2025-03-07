@@ -73,23 +73,47 @@ export default function BookPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-50 to-purple-50 py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-pink-50 via-purple-50 to-blue-50 py-12 px-4">
       <div className="container max-w-6xl mx-auto">
-        <div className="mb-6">
-          <Link href="/" className="inline-flex items-center text-purple-600 hover:text-purple-800 transition-colors">
-            <ArrowLeft className="w-4 h-4 mr-1" />
-            <span>Back to Home</span>
+        {/* Enhanced Back to Home link */}
+        <div className="mb-10">
+          <Link 
+            href="/" 
+            className="inline-flex items-center px-4 py-2 bg-white/70 backdrop-blur-sm rounded-full text-purple-600 hover:text-pink-600 hover:bg-white/90 transition-all duration-300 shadow-sm hover:shadow group"
+          >
+            <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform duration-300" />
+            <span className="font-medium">Back to Home</span>
           </Link>
         </div>
 
-        <div className="text-center mb-8">
-          <h1 className="text-3xl md:text-5xl font-bold text-pink-600 mb-2">{sampleBookData.title}</h1>
-          <p className="text-purple-700">Your personal story, based on your digital footprints</p>
+        <div className="text-center mb-12">
+          {/* Decorative element above title */}
+          <div className="w-24 h-1 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full mx-auto mb-4"></div>
+          
+          {/* Enhanced heading with gradient text and animation */}
+          <h1 className="relative text-3xl md:text-5xl font-bold mb-4 inline-block">
+            <span className="text-transparent bg-clip-text bg-gradient-to-br from-pink-600 via-purple-600 to-indigo-600 animate-gradient-text drop-shadow-sm tracking-tight">
+              {sampleBookData.title}
+            </span>
+            
+            {/* Decorative underline */}
+            <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-pink-400 to-transparent opacity-70"></div>
+          </h1>
+          
+          {/* Enhanced tagline with card-like styling */}
+          <div className="max-w-xl mx-auto">
+            <div className="bg-white/60 backdrop-blur-sm px-6 py-3 rounded-full shadow-sm border border-purple-100/50 inline-block">
+              <p className="text-purple-700 font-medium">
+                <span className="text-pink-600">Your personal story</span>, crafted from your digital footprints
+              </p>
+            </div>
+          </div>
         </div>
 
+        {/* Enhanced book container with subtle shadow and border */}
         <div className="flex flex-col items-center">
-          <div className="relative w-full max-w-3xl aspect-[3/2] mb-8">
-            <div className="absolute inset-0 bg-white rounded-lg shadow-2xl overflow-hidden">
+          <div className="relative w-full max-w-3xl aspect-[3/2] mb-10 rounded-2xl overflow-hidden shadow-xl border border-purple-100/50 bg-white/90 backdrop-blur-sm">
+            <div className="absolute inset-0 overflow-hidden">
               <BookPageContent
                 content={sampleBookData.pages[currentPage].content}
                 pageNumber={sampleBookData.pages[currentPage].pageNumber}
@@ -98,11 +122,11 @@ export default function BookPage() {
               />
             </div>
 
-            {/* Page navigation controls */}
+            {/* Enhanced page navigation controls */}
             <button
               onClick={goToPrevPage}
               disabled={currentPage === 0 || isFlipping}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-md hover:bg-white disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-md hover:bg-white hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed transition-all hover:scale-110 active:scale-95"
               aria-label="Previous page"
             >
               <ChevronLeft className="w-6 h-6 text-purple-600" />
@@ -111,21 +135,23 @@ export default function BookPage() {
             <button
               onClick={goToNextPage}
               disabled={currentPage === totalPages - 1 || isFlipping}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-md hover:bg-white disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full shadow-md hover:bg-white hover:shadow-lg disabled:opacity-50 disabled:cursor-not-allowed transition-all hover:scale-110 active:scale-95"
               aria-label="Next page"
             >
               <ChevronRight className="w-6 h-6 text-purple-600" />
             </button>
 
-            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/80 px-3 py-1 rounded-full text-sm text-purple-700">
+            {/* Enhanced page indicator */}
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white/80 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm text-purple-700 font-medium shadow-sm border border-purple-100/30">
               Page {currentPage + 1} of {totalPages}
             </div>
           </div>
 
+          {/* Enhanced action buttons */}
           <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md">
             <Button
               onClick={handleShare}
-              className="flex-1 bg-purple-500 hover:bg-purple-600 text-white rounded-full py-6"
+              className="flex-1 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white rounded-full py-6 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
             >
               <Share2 className="w-5 h-5 mr-2" />
               Share Story
@@ -133,7 +159,7 @@ export default function BookPage() {
 
             <Button
               onClick={handleDownload}
-              className="flex-1 bg-pink-500 hover:bg-pink-600 text-white rounded-full py-6"
+              className="flex-1 bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white rounded-full py-6 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
             >
               <Download className="w-5 h-5 mr-2" />
               Download PDF
@@ -141,6 +167,20 @@ export default function BookPage() {
           </div>
         </div>
       </div>
+      
+      {/* Add the animation styles */}
+      <style jsx global>{`
+        @keyframes gradient-text {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        
+        .animate-gradient-text {
+          background-size: 200% auto;
+          animation: gradient-text 4s ease infinite;
+        }
+      `}</style>
     </div>
   )
 }
