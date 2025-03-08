@@ -2,10 +2,10 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
-from groq import Groq
-from utils import process_browser_history
+import httpx
 import os
 import json
+from typing import Union, List, Optional
 
 
 load_dotenv()
@@ -13,9 +13,6 @@ load_dotenv()
 secret = os.getenv("secret")
 
 app = FastAPI()
-client = Groq(
-    api_key=os.environ.get("secret"),
-)
 
 user_data_storage = {}
 
@@ -28,15 +25,15 @@ app.add_middleware(
 )
 
 class BrowserEntry(BaseModel):
-    favicon_url: str | None
-    page_transition_qualifier: str | None
+    favicon_url: Optional[str] = None
+    page_transition_qualifier: Optional[str] = None
     title: str
     url: str
     time_usec: int
-    client_id: str | None
+    client_id: Optional[str] = None
 
 class BrowserHistory(BaseModel):
-    Browser_History: list[BrowserEntry] = Field(alias="Browser History")
+    Browser_History: List[BrowserEntry] = Field(alias="Browser History")
 
 @app.get("/")
 async def root():
@@ -67,16 +64,35 @@ async def generateStory():
     Drop 'facts' about their personality, habits, and future based on their browsing habits.
     """
 
-    chat_completion = client.chat.completions.create(
-        messages = [
+    # Using httpx directly since groq 0.0.1 is just a placeholder and doesn't have the chat.completions API
+    headers = {
+        "Authorization": f"Bearer {secret}",
+        "Content-Type": "application/json"
+    }
+    
+    data = {
+        "messages": [
             {
-                "role" : "user",
-                "content" : prompt,
+                "role": "user",
+                "content": prompt
             }
         ],
-        model="llama-3.3-70b-versatile",
-    )
-    return {
-                "life story" : chat_completion.choices[0].message.content,
-                "status" : 200
+        "model": "llama-3.3-70b-versatile"
+    }
+    
+    async with httpx.AsyncClient() as client:
+        try:
+            response = await client.post(
+                "https://api.groq.com/openai/v1/chat/completions",
+                headers=headers,
+                json=data,
+                timeout=60.0
+            )
+            response.raise_for_status()
+            result = response.json()
+            return {
+                "life story": result["choices"][0]["message"]["content"],
+                "status": 200
             }
+        except httpx.HTTPError as e:
+            raise HTTPException(status_code=500, detail=f"Error calling Groq API: {str(e)}")
