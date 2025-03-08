@@ -19,7 +19,8 @@ export default function HomePage() {
   const moveTimeoutRef = useRef<NodeJS.Timeout | null>(null)
   const pageRef = useRef<HTMLDivElement>(null)
   const trailIdCounter = useRef(0)
-  
+  let printables = null;
+
   // Handle cursor movement and ink trail
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -121,6 +122,8 @@ export default function HomePage() {
         console.log("error adichilla ivdeded");
         const data=await response.json();
         console.log("ithaaan nmmde data ",data);
+        printables = data;
+        localStorage.setItem("bookData", JSON.stringify(data));
       }catch(error){
         console.log("ithan nmmde error ",error);
       }

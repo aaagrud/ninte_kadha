@@ -1,6 +1,5 @@
-"use client"
-
-import { useState } from "react"
+"use client";
+import { useState,useEffect } from "react"
 import Link from "next/link"
 import { ArrowLeft, Share2, Download, ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -37,6 +36,19 @@ export default function BookPage() {
   const [currentPage, setCurrentPage] = useState(0)
   const [isFlipping, setIsFlipping] = useState(false)
   const [flipDirection, setFlipDirection] = useState<"next" | "prev">("next")
+  const [bookData, setBookData] = useState<any>(null);
+  let data;
+
+  useEffect(() => {
+    // ✅ Retrieve data from localStorage
+    const storedData = localStorage.getItem("bookData");
+    data = storedData;
+    if (storedData) {
+        setBookData(JSON.parse(storedData));
+    }
+}, []);  
+
+  console.log(data);
 
   const totalPages = sampleBookData.pages.length
 
