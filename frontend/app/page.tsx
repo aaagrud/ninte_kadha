@@ -1,5 +1,5 @@
 "use client"
-
+import { useRouter } from "next/navigation";
 import Link from "next/link"
 import { HelpCircle, Sparkles, History, Book, Star, ArrowRight } from "lucide-react"
 import FileUpload from "@/components/file-upload"
@@ -10,6 +10,7 @@ import { cn } from "@/lib/utils"
 
 export default function HomePage() {
   // Custom cursor state
+  const router = useRouter();
   const [cursorPosition, setCursorPosition] = useState({ x: -100, y: -100 })
   const [isMoving, setIsMoving] = useState(false)
   const [isHovering, setIsHovering] = useState(false)
@@ -103,7 +104,30 @@ export default function HomePage() {
       clearInterval(cleanupInterval)
     }
   }, [isHovering])
-
+  
+  const clickHandler=()=>{
+    const getDatafromBackend=async()=>{
+      try{
+        console.log("try aakitind");
+        const response=await fetch("http://127.0.0.1:8000/story",{
+          method:"GET",
+        });
+        console.log("response kainj");
+        if(!response.ok){
+          console.log("error adichu ivdeded");
+          throw new Error("Network response was not ok");
+        }
+        
+        console.log("error adichilla ivdeded");
+        const data=await response.json();
+        console.log("ithaaan nmmde data ",data);
+      }catch(error){
+        console.log("ithan nmmde error ",error);
+      }
+    };
+    getDatafromBackend();
+    router.push("/book");
+  }
 
   return (
     <div 
@@ -361,7 +385,7 @@ export default function HomePage() {
               <ToneSelector />
             </div>
             <div className="pt-6 flex flex-col items-center space-y-6">
-              <Button className="w-full max-w-md bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold py-7 rounded-full text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98]">
+              <Button className="w-full max-w-md bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold py-7 rounded-full text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98]" onClick={clickHandler}>
                 <Sparkles className="mr-2 h-5 w-5" /> Generate Your Story
               </Button>
                {/* <Link href="/help" className="group flex items-center text-purple-600 hover:text-pink-600 transition-colors duration-300 text-sm md:text-base">

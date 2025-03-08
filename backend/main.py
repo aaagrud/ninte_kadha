@@ -45,20 +45,15 @@ async def root():
 @app.post("/upload")
 async def upload_data(user_data: BrowserHistory):
     """Endpoint to receive and store user data."""
-    print(user_data.Browser_History)
     user_data_storage["data"] = user_data.Browser_History  # Store only the list of entries
     return {"message": "User data uploaded successfully"}
 
 @app.get("/story")
 async def generateStory():    
-    print("*********************")
-    print(user_data_storage)
     if "data" not in user_data_storage or not user_data_storage["data"]:
          raise HTTPException(status_code=400, detail="No valid data found. Please upload first.")
     
     user_data = user_data_storage["data"]
-    print("*********************")
-    print(user_data)
     #formatted_history = "\n".join([f"- {entry['title']} ({entry['url']})" for entry in user_data])
 
     prompt = f"""
