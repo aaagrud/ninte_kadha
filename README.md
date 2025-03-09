@@ -8,6 +8,7 @@ Ninte Katha (*"Your Story"* in Malayalam) is an AI-driven application that analy
 
 This project was built for **HackForNothing**.
 
+[Link to presentation](https://www.canva.com/design/DAGhFTG1Vhs/2x7M17OKePCAQ0SyM3zbCg/edit?utm_content=DAGhFTG1Vhs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 ## Features
 
 - **Behavioral Analysis** – AI-powered insights into your personality.
@@ -26,7 +27,7 @@ This project was built for **HackForNothing**.
 ## Tech Stack
 
 - **Backend:** FastAPI, Python, Groq AI
-- **Frontend:** HTML, CSS, JavaScript
+- **Frontend:** Nextjs, Tailwind, TypeScript
 - **Server:** Uvicorn
 - **Environment Management:** dotenv
 
