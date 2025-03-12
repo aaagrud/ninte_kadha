@@ -1,332 +1,36 @@
 {
-  "Browser History": [
-      {
-          "favicon_url": "https://www.google.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Google Takeout",
-          "url": "https://takeout.google.com/settings/takeout?pli=1",
-          "time_usec": 1741354702573371,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.google.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Google Takeout",
-          "url": "https://takeout.google.com/settings/takeout?pli=1",
-          "time_usec": 1741354690390069,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.google.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Google Takeout",
-          "url": "https://takeout.google.com/settings/takeout?pli=1",
-          "time_usec": 1741354538801259,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.google.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "google takeout - Google Search",
-          "url": "https://www.google.com/search?q=google+takeout&oq=google+take&gs_lcrp=EgZjaHJvbWUqCggAEAAYsQMYgAQyCggAEAAYsQMYgAQyCQgBEEUYORiABDIKCAIQABixAxiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDQ2NDBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8",
-          "time_usec": 1741354535545035,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.google.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Google - My Activity",
-          "url": "https://myactivity.google.com/myactivity?pli=1",
-          "time_usec": 1741354440226633,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.google.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Google - My Activity",
-          "url": "https://myactivity.google.com/myactivity?pli=1",
-          "time_usec": 1741354435894936,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.google.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Google - My Activity",
-          "url": "https://myactivity.google.com/myactivity?pli=1",
-          "time_usec": 1741354428047172,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.google.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Google - My Activity",
-          "url": "https://myactivity.google.com/myactivity?pli=1",
-          "time_usec": 1741354421655707,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.google.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Google - My Activity",
-          "url": "https://myactivity.google.com/myactivity?pli=1",
-          "time_usec": 1741354415353360,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.google.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Google - My Activity",
-          "url": "https://myactivity.google.com/activitycontrols?settings=youtube&utm_source=my-activity&facs=1",
-          "time_usec": 1741354370916614,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.google.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Google - My Activity",
-          "url": "https://myactivity.google.com/activitycontrols?settings=youtube&utm_source=my-activity&facs=1",
-          "time_usec": 1741354364830404,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://chat.groq.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Groq is Fast AI Inference",
-          "url": "https://chat.groq.com/authenticate/login/login-self-close",
-          "time_usec": 1741354299275032,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://chat.groq.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Groq is Fast AI Inference",
-          "url": "https://chat.groq.com/authenticate/login/auto-login-google?stytch_token_type=oauth&token=ozDZfx2dHlfj-MsMFST29V_tuMVEGIng9OCCHq63Bvfe",
-          "time_usec": 1741354298050171,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.google.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Sign in \u2013 Google accounts",
-          "url": "https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?access_type=offline&client_id=952064420590-rd6lnom3ohdjlsu5aujh85j8bo6ntbgd.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fapi.stytch.groq.com%2Fv1%2Foauth%2Fcallback%2Foauth-callback-live-c141e357-8830-4675-b9ab-05c35f93da32&response_type=code&scope=openid%20email%20profile&state=Google%3AsUbYsQCsbavAhKXWcWOZ0u3BEupZ_KIS3XNFq0GcqMIR&service=lso&o2v=1&ddm=1&flowName=GeneralOAuthFlow",
-          "time_usec": 1741354294420458,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Sign in \u2013 Google accounts",
-          "url": "https://accounts.google.com/o/oauth2/auth?access_type=offline&client_id=952064420590-rd6lnom3ohdjlsu5aujh85j8bo6ntbgd.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fapi.stytch.groq.com%2Fv1%2Foauth%2Fcallback%2Foauth-callback-live-c141e357-8830-4675-b9ab-05c35f93da32&response_type=code&scope=openid%20email%20profile&state=Google%3AsUbYsQCsbavAhKXWcWOZ0u3BEupZ_KIS3XNFq0GcqMIR&service=lso&o2v=1&ddm=1",
-          "time_usec": 1741354294385988,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Sign in \u2013 Google accounts",
-          "url": "https://accounts.google.com/o/oauth2/auth?access_type=offline&client_id=952064420590-rd6lnom3ohdjlsu5aujh85j8bo6ntbgd.apps.googleusercontent.com&redirect_uri=https%3A%2F%2Fapi.stytch.groq.com%2Fv1%2Foauth%2Fcallback%2Foauth-callback-live-c141e357-8830-4675-b9ab-05c35f93da32&response_type=code&scope=openid+email+profile&state=Google%3AsUbYsQCsbavAhKXWcWOZ0u3BEupZ_KIS3XNFq0GcqMIR",
-          "time_usec": 1741354293711955,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://chat.groq.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Groq is Fast AI Inference",
-          "url": "https://chat.groq.com/authenticate/login/auto-login-google-initialize",
-          "time_usec": 1741354290824953,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Groq is Fast AI Inference",
-          "url": "https://groq.com/#",
-          "time_usec": 1741354280156490,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://groq.com/wp-content/uploads/2024/02/android-icon-192x192-1-150x150.png",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Groq is Fast AI Inference",
-          "url": "https://groq.com/",
-          "time_usec": 1741354273353931,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "groq - Google Search",
-          "url": "https://www.google.com/search?q=groq&oq=groq&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDwyEwgCEC4YgwEYxwEYsQMY0QMYgAQyDAgDECMYJxiABBiKBTIYCAQQLhhDGIMBGMcBGLEDGNEDGIAEGIoFMg0IBRAAGIMBGLEDGIAEMg0IBhAAGIMBGLEDGIAEMgYIBxBFGDzSAQc5MzVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8",
-          "time_usec": 1741354271449270,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.google.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Google - My Activity",
-          "url": "https://myactivity.google.com/myactivity?pli=1",
-          "time_usec": 1741354167186922,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "my activity - Google Search",
-          "url": "https://www.google.com/search?q=my+activity&oq=my+activity&gs_lcrp=EgZjaHJvbWUyDwgAEEUYORiDARixAxiABDIMCAEQABhDGIAEGIoFMg0IAhAAGIMBGLEDGIAEMg0IAxAAGIMBGLEDGIAEMgcIBBAAGIAEMg0IBRAAGIMBGLEDGIAEMgcIBhAAGIAEMgYIBxAFGEDSAQgxNzcyajBqN6gCALACAA&sourceid=chrome&ie=UTF-8",
-          "time_usec": 1741354163386176,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://github.githubassets.com/favicons/favicon.svg",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "aaagrud/hackForNothing",
-          "url": "https://github.com/aaagrud/hackForNothing",
-          "time_usec": 1741353602799006,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://fastapi.tiangolo.com/img/favicon.png",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "FastAPI",
-          "url": "https://fastapi.tiangolo.com/",
-          "time_usec": 1741353489333009,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://groq.com/wp-content/uploads/2024/02/android-icon-192x192-1-150x150.png",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Groq is Fast AI Inference",
-          "url": "https://groq.com/",
-          "time_usec": 1741353389934911,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "groq - Google Search",
-          "url": "https://www.google.com/search?q=groq&oq=groq&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyGAgBEC4YQxiDARjHARixAxjRAxiABBiKBTISCAIQABhDGIMBGLEDGIAEGIoFMgwIAxAAGEMYgAQYigUyEggEEAAYQxiDARixAxiABBiKBTISCAUQABgUGIMBGIcCGLEDGIAEMgcIBhAAGIAEMgYIBxAFGEDSAQgxMTE2ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8",
-          "time_usec": 1741353387611039,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Gemini",
-          "url": "https://gemini.google.com/app?hl=en-IN",
-          "time_usec": 1741353238159163,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.gstatic.com/lamda/images/gemini_sparkle_v002_d4735304ff6292a690345.svg",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "\u200eGemini \u2013 chat to supercharge your ideas",
-          "url": "https://gemini.google.com/?hl=en-IN",
-          "time_usec": 1741353236525080,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.google.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "gemini - Google Search",
-          "url": "https://www.google.com/search?q=gemini&oq=gemini+&gs_lcrp=EgZjaHJvbWUqBwgAEAAYjwIyBwgAEAAYjwIyBggBEEUYOzIMCAIQABhDGIAEGIoFMhIIAxAAGEMYgwEYsQMYgAQYigUyDwgEEAAYQxixAxiABBiKBTIGCAUQRRg8MgYIBhBFGD0yBggHEAUYQNIBCDE1NjRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8",
-          "time_usec": 1741353222799387,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.google.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "squid games stairs - Google Search",
-          "url": "https://www.google.com/search?sca_esv=d492661d9463033a&sxsrf=AHTn8zr6Sh6KoGFW4x85kWLZLIKz7fOUmw:1741352932186&q=squid+games+stairs&udm=2&fbs=ABzOT_CWdhQLP1FcmU5B0fn3xuWpA-dk4wpBWOGsoR7DG5zJBpwxALD7bRaeOIZxqOFEngxArVnzSUyc1QpiuTUVHc4E7mfS7phR3Xv7xK7LS9NQY_j97lM4M75d2ahQ4ow7H_MMDBeIa-r7PHqrio0d-7tMQ_E0RZpVjxCnuD1kZRCOLkWlDe5a0Fr-fKQkiMl_h4azCv540b92_VHR5v1Qli92u5Tw4Q&sa=X&sqi=2&ved=2ahUKEwjSgs6XhfiLAxUOUGcHHZgTGEMQtKgLegQIERAB&biw=1536&bih=738&dpr=1.25",
-          "time_usec": 1741352945043791,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.google.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "squid games stairs - Google Search",
-          "url": "https://www.google.com/search?q=squid+games+stairs&oq=squid+games+stairs&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIJCAEQABgKGIAEMgkIAhAAGAoYgAQyCQgDEAAYChiABDIJCAQQABgKGIAEMgcIBRAAGIAEMgkIBhAAGAoYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgATSAQg1MjU5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8",
-          "time_usec": 1741352933856225,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://www.google.com/favicon.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "fast api - Google Search",
-          "url": "https://www.google.com/search?q=fast+api&oq=fast+api&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORixAxiABDIKCAEQABixAxiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIJCAYQABgKGIAEMgcIBxAAGIAEMgcICBAAGIAEMgcICRAAGIAE0gEIMTU1MGowajeoAgCwAgA&sourceid=chrome&ie=UTF-8",
-          "time_usec": 1741352899912977,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Trash - sachinmanojkr@gmail.com - Gmail",
-          "url": "https://mail.google.com/mail/u/0/#trash",
-          "time_usec": 1741352672754873,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Inbox (835) - sachinmanojkr@gmail.com - Gmail",
-          "url": "https://mail.google.com/mail/u/0/#inbox",
-          "time_usec": 1741352657484644,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Inbox (835) - sachinmanojkr@gmail.com - Gmail",
-          "url": "https://mail.google.com/mail/u/0/",
-          "time_usec": 1741352655098864,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://github.githubassets.com/favicons/favicon.svg",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "aaagrud/hackForNothing",
-          "url": "https://github.com/aaagrud/hackForNothing",
-          "time_usec": 1741352653890357,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://github.githubassets.com/favicons/favicon.svg",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Invitation to join aaagrud/hackForNothing",
-          "url": "https://github.com/aaagrud/hackForNothing/invitations",
-          "time_usec": 1741352649756914,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "aaagrud invited you to aaagrud/hackForNothing - sachinmanojkr@gmail.com - Gmail",
-          "url": "https://mail.google.com/mail/u/0/#inbox/FMfcgzQZTVxGZWfwCvBqlGShkCGwxqbf",
-          "time_usec": 1741352646996873,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Inbox (836) - sachinmanojkr@gmail.com - Gmail",
-          "url": "https://mail.google.com/mail/u/0/#inbox",
-          "time_usec": 1741352644694968,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "Inbox (836) - sachinmanojkr@gmail.com - Gmail",
-          "url": "https://mail.google.com/mail/u/0/",
-          "time_usec": 1741352642362895,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-},
-      {
-          "favicon_url": "https://github.githubassets.com/favicons/favicon.svg",
-          "page_transition_qualifier": "CLIENT_REDIRECT",
-          "title": "added valid entry to tags and conversation tags table by sachin136631 · Pull Request #132 · telinfy/ga-gupshup-inbound-service",
-          "url": "https://github.com/telinfy/ga-gupshup-inbound-service/pull/132/commits",
-          "time_usec": 1741336573583988,
-          "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
-}
-  ]
-}
+    "Browser History": [
+        {
+            "favicon_url": "https://www.google.com/favicon.ico",
+            "page_transition_qualifier": "CLIENT_REDIRECT",
+            "title": "Google Takeout",
+            "url": "https://takeout.google.com/settings/takeout?pli=1",
+            "time_usec": 1741354702573371,
+            "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
+  },
+        {
+            "favicon_url": "https://www.google.com/favicon.ico",
+            "page_transition_qualifier": "CLIENT_REDIRECT",
+            "title": "Google Takeout",
+            "url": "https://takeout.google.com/settings/takeout?pli=1",
+            "time_usec": 1741354690390069,
+            "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
+  },
+        {
+            "favicon_url": "https://www.google.com/favicon.ico",
+            "page_transition_qualifier": "CLIENT_REDIRECT",
+            "title": "Google Takeout",
+            "url": "https://takeout.google.com/settings/takeout?pli=1",
+            "time_usec": 1741354538801259,
+            "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
+  },
+        {
+            "favicon_url": "https://www.google.com/favicon.ico",
+            "page_transition_qualifier": "CLIENT_REDIRECT",
+            "title": "google takeout - Google Search",
+            "url": "https://www.google.com/search?q=google+takeout&oq=google+take&gs_lcrp=EgZjaHJvbWUqCggAEAAYsQMYgAQyCggAEAAYsQMYgAQyCQgBEEUYORiABDIKCAIQABixAxiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDQ2NDBqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8",
+            "time_usec": 1741354535545035,
+            "client_id": "txRKxoRcVG6ORwPdqD/Cgw=="
+  }
+    ]
+  }

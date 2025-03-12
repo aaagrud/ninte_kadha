@@ -1,4 +1,5 @@
 "use client"
+import { createContext, useContext,  ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link"
 import { HelpCircle, Sparkles, History, Book, Star, ArrowRight } from "lucide-react"
@@ -6,7 +7,9 @@ import FileUpload from "@/components/file-upload"
 import ToneSelector from "@/components/tone-selector"
 import { Button } from "@/components/ui/button"
 import { useEffect, useState, useRef } from "react"
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
+import { useData } from "@/context/DataContext"; // Import the context
+
 
 export default function HomePage() {
   // Custom cursor state
@@ -19,6 +22,8 @@ export default function HomePage() {
   const moveTimeoutRef = useRef<NodeJS.Timeout | null>(null)
   const pageRef = useRef<HTMLDivElement>(null)
   const trailIdCounter = useRef(0)
+  const { setData } = useData(); // Get setData from context
+
   
   // Handle cursor movement and ink trail
   useEffect(() => {
@@ -120,6 +125,7 @@ export default function HomePage() {
         
         console.log("error adichilla ivdeded");
         const data=await response.json();
+        setData(data);
         console.log("ithaaan nmmde data ",data);
       }catch(error){
         console.log("ithan nmmde error ",error);
